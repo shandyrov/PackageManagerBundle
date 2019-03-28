@@ -9,8 +9,5 @@
         <!-- Load services from whatever directories you want (you can update this!) -->
         <prototype namespace="Sputnik\PackageManagerBundle\" resource="../../../PackageManagerBundle/*" exclude="../../../PackageManagerBundle/{Entity,Repository}" />
     
-        <service id="sputnik_package_manager.routing_loader" class="Sputnik\PackageManagerBundle\Routing\ExtraLoader">
-            <tag name="routing.loader"/>
-        </service> 
     </services>
 </container>
