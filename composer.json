@@ -1,0 +1,31 @@
+{
+    "name" : "shandyrov/packagemanagerbundle",
+    "description" : "PackageManager bundle",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "askar",
+        "email" : "shandyrov@gmail.com"
+    }],
+    "keywords" : [
+        "packagemanager bundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {    
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Sputnik\\PackageManagerBundle" : ""
+        }
+    },
+    "target-dir" : "Sputnik/PackageManagerBundle",
+    "repositories":[{
+      
+    }],
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "0.1-dev"  
+        }
+    }
+}
