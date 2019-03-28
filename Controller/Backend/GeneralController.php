@@ -2,6 +2,7 @@
 namespace Sputnik\PackageManagerBundle\Controller\Backend;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Sputnik\TemplateBundle\Service\TemplateManager;
 
 class GeneralController extends AbstractController
 {
