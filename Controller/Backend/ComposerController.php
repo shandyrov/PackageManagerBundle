@@ -13,7 +13,7 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
 
-class GeneralController extends AbstractController
+class ComposerController extends AbstractController
 {
     
     /**
