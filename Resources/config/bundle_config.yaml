@@ -1,0 +1,14 @@
+bundle_config:
+  type: plugin
+  locale:
+        en:
+            name: Package Manager
+            description: Package Manager Description
+        ru:
+            name: Менеджер пакетов
+            description: Описание менеджера пакетов
+        kk:
+            name: Пакет менеджері
+            description: Пакет менеджері сипаттамасы
+
+  default_path: admin_package_manager_index
