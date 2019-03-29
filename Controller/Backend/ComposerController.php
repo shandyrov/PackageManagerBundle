@@ -1,6 +1,7 @@
 <?php
 namespace Sputnik\PackageManagerBundle\Controller\Backend;
 
+use Sputnik\TemplateBundle\Service\TemplateManager;
 use Sputnik\CoreBundle\Service\CacheManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
