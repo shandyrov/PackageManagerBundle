@@ -8,6 +8,6 @@
         <defaults autowire="true" autoconfigure="true" public="false" />
         <!-- Load services from whatever directories you want (you can update this!) -->
         <prototype namespace="Sputnik\PackageManagerBundle\" resource="../../../PackageManagerBundle/*" exclude="../../../PackageManagerBundle/{Entity,Repository}" />
-    
+        <service id="Sputnik\CoreBundle\Service\CacheManager".>
     </services>
 </container>
