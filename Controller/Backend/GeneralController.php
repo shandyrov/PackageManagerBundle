@@ -1,7 +1,7 @@
 <?php
 namespace Sputnik\PackageManagerBundle\Controller\Backend;
 
-use Sputnik\Service\CacheManager;
+use Sputnik\CoreBundle\Service\CacheManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\Filesystem\Filesystem;
