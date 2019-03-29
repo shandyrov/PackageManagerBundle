@@ -15,16 +15,29 @@ use Symfony\Component\Process\Process;
 
 class GeneralController extends AbstractController
 {
+    
+    /**
+     * @var $templateManager TemplateManager
+     */
+    private $templateManager;
+    
     /**
      * @var $cacheManager CacheManager
      */
     private $cacheManager;
 
-    public function __construct(CacheManager $cacheManager)
+    public function __construct(TemplateManager $templateManager, CacheManager $cacheManager)
     {
+        $this->templateManager = $templateManager;
         $this->cacheManager = $cacheManager;
     }
 
+    
+    public function index()
+    {
+        return $this->render($this->templateManager->getCurrentBackend().'/index.html.twig');
+    }
+    
     /**
      * Installing composer
      * @Route("/admin/composer/install", name="admin_composer_install")
