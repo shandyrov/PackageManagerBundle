@@ -32,10 +32,10 @@ class GeneralController extends AbstractController
         $this->cacheManager = $cacheManager;
     }
 
-    
     public function index()
     {
-        return $this->render($this->templateManager->getCurrentBackend().'/index.html.twig');
+        return $this->render('@PackageManager/templates/'.$this->templateManager->getCurrentBackend().'/index.html.twig');
+
     }
     
     /**
