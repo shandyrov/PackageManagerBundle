@@ -1,6 +1,6 @@
 admin_package_manager_index:
   path: /admin/plugins/packagemanager
-  controller: Sputnik\PackageManagerBundle\Controller\Backend\GeneralController::index
+  controller: Sputnik\PackageManagerBundle\Controller\Backend\ComposerController::index
 
 admin_package_manager_composer_install:
   path: /admin/composer/install
