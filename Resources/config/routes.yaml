@@ -1,3 +1,16 @@
 admin_package_manager_index:
-  path: /admin/plugins/package-manager
+  path: /admin/plugins/packagemanager
   controller: Sputnik\PackageManagerBundle\Controller\Backend\GeneralController::index
+
+admin_package_manager_composer_install:
+  path: /admin/composer/install
+  controller: Sputnik\PackageManagerBundle\Controller\Backend\ComposerController::composerInstall
+
+admin_package_manager_composer_run_command:
+  path: /admin/composer/{command}/{vendor}/{package}/{clearcache}
+  controller: Sputnik\PackageManagerBundle\Controller\Backend\ComposerController::runCommand
+  requirements:
+    command: \w+
+    vendor: \w+
+    package: \w+
+    clearcache: \d+
