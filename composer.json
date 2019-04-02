@@ -2,6 +2,7 @@
     "name" : "shandyrov/packagemanagerbundle",
     "description" : "PackageManager bundle",
     "type" : "symfony-bundle",
+    "version" : "0.1",
     "authors" : [{
         "name" : "askar",
         "email" : "shandyrov@gmail.com"
