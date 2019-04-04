@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="blog.enabled">true</parameter>
+        <parameter key="blog.type">plugin</parameter>
+        <parameter key="blog.locale" type="collection">
+            <parameter key="en" type="collection">
+                <parameter key="name">Package Manager</parameter>
+                <parameter key="description">Package Manager Description</parameter>
+            </parameter>
+            <parameter key="ru" type="collection">
+                <parameter key="name">Менеджер пакетов</parameter>
+                <parameter key="description">Описание менеджера пакетов</parameter>
+            </parameter>
+            <parameter key="kk" type="collection">
+                <parameter key="name">Пакет менеджері</parameter>
+                <parameter key="description">Пакет менеджері сипаттамасы</parameter>
+            </parameter>
+        </parameter>
+        <parameter key="blog.default_path" type="string">admin_bundle_manager_index</parameter>
+
+        <parameter key="blog.icon" type="collection">
+            <parameter key="material_icon" type="string">view_module</parameter>
+        </parameter>
+    </parameters>
+</container>
