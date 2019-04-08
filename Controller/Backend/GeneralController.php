@@ -3,6 +3,7 @@ namespace Sputnik\PackageManagerBundle\Controller\Backend;
 
 use Sputnik\TemplateBundle\Service\TemplateManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class GeneralController extends AbstractController
@@ -17,7 +18,7 @@ class GeneralController extends AbstractController
         $this->templateManager = $templateManager;
     }
 
-    public function index(Response $response)
+    public function index(Request $request)
     {
 
         return $this->render($this->templateManager->getCurrentBackend().'/general/index.html.twig');
