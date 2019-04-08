@@ -21,7 +21,7 @@ class GeneralController extends AbstractController
     public function index(Request $request)
     {
 
-        return $this->render($this->templateManager->getCurrentBackend().'/general/index.html.twig');
+        return $this->render('@PackageManager/templates/'.$this->templateManager->getCurrentBackend().'/general/index.html.twig');
     }
 
 }
