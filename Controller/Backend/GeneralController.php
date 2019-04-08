@@ -14,7 +14,7 @@ class GeneralController extends AbstractController
 
     public function __construct(TemplateManager $templateManager)
     {
-        $this->$templateManager = $templateManager;
+        $this->templateManager = $templateManager;
     }
 
     public function index(Response $response)
